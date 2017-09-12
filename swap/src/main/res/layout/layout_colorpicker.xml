@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ColorPicker">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <View
+            android:id="@+id/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="#123456"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/materialcolorpicker__activity_vertical_margin"
+        android:paddingLeft="@dimen/materialcolorpicker__activity_horizontal_margin"
+        android:paddingRight="@dimen/materialcolorpicker__activity_horizontal_margin"
+        android:paddingTop="@dimen/materialcolorpicker__activity_vertical_margin">
+
+        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+            android:id="@+id/alphaSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:text="haha"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"
+            android:progressDrawable="@drawable/materialcolorpicker__alpha_progress"
+            android:textColor="@android:color/black"
+            android:thumb="@drawable/drawable_alpha"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"/>
+
+        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+            android:id="@+id/redSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alphaSeekBar"
+            android:max="255"
+            android:text="haha"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"
+            android:progressDrawable="@drawable/materialcolorpicker__red_progress"
+            android:textColor="@android:color/holo_red_light"
+            android:thumb="@drawable/drawable_red"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"/>
+
+        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+            android:id="@+id/greenSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redSeekBar"
+            android:max="255"
+            android:text="haha"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"
+            android:progressDrawable="@drawable/materialcolorpicker__green_progress"
+            android:textColor="@android:color/holo_green_light"
+            android:thumb="@drawable/drawable_green"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"/>
+
+        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+            android:id="@+id/blueSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greenSeekBar"
+            android:max="255"
+            android:text="haha"
+            android:maxHeight="3dip"
+            android:minHeight="3dip"
+            android:progressDrawable="@drawable/materialcolorpicker__blue_progress"
+            android:textColor="@android:color/holo_blue_light"
+            android:thumb="@drawable/drawable_blue"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"/>
+
+        <Button
+            android:id="@+id/okColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/blueSeekBar"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:text="@string/materialcolorpicker__btnSelectColor"
+            android:background="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>
