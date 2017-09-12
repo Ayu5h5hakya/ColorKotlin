@@ -37,7 +37,7 @@
         android:paddingRight="@dimen/materialcolorpicker__activity_horizontal_margin"
         android:paddingTop="@dimen/materialcolorpicker__activity_vertical_margin">
 
-        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+        <com.example.swap.ColorSeekbar
             android:id="@+id/alphaSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:paddingLeft="9dp"
             android:paddingRight="9dp"/>
 
-        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+        <com.example.swap.ColorSeekbar
             android:id="@+id/redSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:paddingLeft="9dp"
             android:paddingRight="9dp"/>
 
-        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+        <com.example.swap.ColorSeekbar
             android:id="@+id/greenSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:paddingLeft="9dp"
             android:paddingRight="9dp"/>
 
-        <com.example.ayush.colorpicker.MaterialColorPickerTextSeeker
+        <com.example.swap.ColorSeekbar
             android:id="@+id/blueSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
